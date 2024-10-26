@@ -15,7 +15,7 @@ public class Rotatedbinarysearch {
         if(target>=arr[0]){
             return binarysearch(arr,target,0,pivot-1);
         }
-        return binarysearch(arr,target,pivot+1,arr.length);
+        return binarysearch(arr,target,pivot+1,arr.length-1);
     }
     static int binarysearch(int[] arr,int target,int start,int end){
         while(start<=end){
